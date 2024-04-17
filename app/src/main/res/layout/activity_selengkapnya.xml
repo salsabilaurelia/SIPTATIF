@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_selengkapnya"
+    android:background="@color/grey">
+
+    <TextView
+        android:id="@+id/ketNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:layout_marginHorizontal="40sp"
+        android:text="@string/judul"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ketNama"
+        android:id="@+id/kepanjangan"
+        android:text="@string/kepanjanganJudul"
+        android:textSize="17sp"
+        android:textColor="@color/abuabu"
+        android:layout_marginHorizontal="40sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kepanjangan"
+        android:text="@string/keteranganApp"
+        android:id="@+id/keteranganApp"
+        android:layout_marginTop="10sp"
+        android:layout_marginHorizontal="41sp"
+        android:textSize="11sp"
+        android:textColor="@color/black"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/keteranganApp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/shape_button"
+        android:text="@string/btn_kembali"
+        android:id="@+id/btnKembali"
+        android:layout_marginHorizontal="42dp"
+        android:padding="5sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/unguTua"
+        />
+
+</RelativeLayout>

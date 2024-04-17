@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/purple">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/judul"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/keterangan"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/shape_button"
+        android:text="@string/btn1"
+        android:id="@+id/btn_selengkapnya"
+        />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="230dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:padding="10sp"
+        android:background="@color/grey">
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginHorizontal="50sp"
+            android:text="@string/perintahLogin"
+            android:textSize="20sp"
+            />
+
+        <View
+            android:layout_width="210dp"
+            android:layout_height="2dp"
+            android:layout_marginHorizontal="35sp"
+            android:background="#000000"
+            android:layout_marginTop="5sp"
+            />
+
+        <EditText
+            android:layout_width="210dp"
+            android:layout_height="50sp"
+            android:hint="@string/isiEmail"
+            android:textSize="16sp"
+            android:layout_marginTop="40sp"
+            android:layout_marginHorizontal="35sp"
+            android:paddingHorizontal="10sp"
+            android:background="@color/white"
+            android:id="@+id/edt_isiEmail"
+            android:drawableStart="@drawable/email"
+            />
+
+        <EditText
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:hint="@string/isiPassword"
+            android:textSize="16sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginHorizontal="35sp"
+            android:paddingHorizontal="10sp"
+            android:background="@color/white"
+            android:id="@+id/edt_isiPw"
+            android:drawableStart="@drawable/lock"
+            />
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="155dp"
+            android:text="@string/lupaPw"
+            android:id="@+id/btn_lupaPw"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            />
+
+        <Button
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_button"
+            android:layout_marginTop="30sp"
+            android:text="@string/btnLogin"
+            android:id="@+id/btn_login"
+            android:layout_marginHorizontal="35sp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="60dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:text="@string/pertanyaanAkun"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_marginHorizontal="3dp"
+                android:text="@string/perintahDaftar"
+                android:textSize="12sp"
+                android:textColor="@color/unguTua"
+                android:id="@+id/daftarSini"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/navigation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:padding="10dp"
+        android:id="@+id/header"
+        android:background="@color/unguPudar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/judulApp"
+            android:text="@string/judul"
+            android:textSize="30sp"
+            android:layout_marginHorizontal="25dp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/profil"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginStart="30dp"
+            android:contentDescription="@string/fotoProfil"
+            android:src="@drawable/email" />
+
+        <Spinner
+            android:id="@+id/btn_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:padding="2dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/unguMuda"
+        android:id="@+id/garis"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/unguPudar">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/unguPudar"
+            android:id="@+id/home">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="25dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/home"
+                android:padding="8dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/unguPudar"
+            android:id="@+id/pendaftaran">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pendaftaran"
+
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/daftar"
+                android:padding="8dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/unguPudar"
+            android:id="@+id/dospem">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dospem"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/email"
+                android:padding="8dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/unguPudar"
+            android:id="@+id/statuspendaftaran">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/statuspendaftaran"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/bar_chart"
+                android:padding="8dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

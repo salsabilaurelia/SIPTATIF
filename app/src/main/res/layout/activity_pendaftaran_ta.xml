@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pendaftaranTA"
+    android:id="@+id/pendaftaranTA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/unguMuda"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_vertical"
+        android:id="@+id/toolbar"
+        >
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/menu"
+          android:src="@drawable/menu"
+          android:contentDescription="@string/menu"
+          />
+    </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="80dp"
+      android:orientation="horizontal"
+      android:gravity="bottom"
+      android:padding="10dp"
+      android:id="@+id/header"
+      android:background="@color/unguPudar"
+      android:layout_below="@id/toolbar">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/judulApp"
+        android:text="@string/judul"
+        android:textSize="30sp"
+        android:layout_marginHorizontal="25dp"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:id="@+id/profil"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginStart="30dp"
+        android:contentDescription="@string/fotoProfil"
+        android:src="@drawable/email" />
+
+    <Spinner
+        android:id="@+id/btn_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:padding="2dp"
+        />
+
+  </LinearLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/unguMuda"
+      android:id="@+id/garis"
+      android:layout_below="@id/header"
+      />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/garis"
+        android:layout_marginTop="30dp"
+        android:text="@string/dataPendaftaran"
+        android:layout_marginHorizontal="30dp"
+        android:textSize="18sp"
+        android:id="@+id/datapendaftaran"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/datapendaftaran"
+        android:layout_marginTop="50dp"
+        android:text="@string/pendaftaranMhs"
+        android:background="@color/unguMuda"
+        android:layout_marginHorizontal="30dp"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:id="@+id/pendaftaranMhs"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pendaftaranMhs"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="25dp"
+        android:stretchColumns="*"
+        android:showDividers="middle"
+        android:divider="@drawable/divider_vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Cell 1 -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tgl"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/b1k1"/>
+
+            <!-- Cell 2 -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/judulTa"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/b1k2"/>
+
+            <!-- Cell 3 -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/status"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/b1k3"/>
+        </TableRow>
+
+        <!-- Row 2 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Cell 1 -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/jadwal"
+                android:gravity="center"
+                android:id="@+id/b2k1"
+                />
+
+            <!-- Cell 2 -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/judulTAmhs"
+                android:gravity="center"
+                android:id="@+id/b2k2"/>
+
+            <!-- Cell 3 -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/statusTA"
+                android:gravity="center"
+                android:id="@+id/b2k3"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Cell 1 -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/b3k1"/>
+
+            <!-- Cell 2 -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/b3k2"/>
+
+            <!-- Cell 3 -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/b3k3"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Cell 1 -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/b4k1"/>
+
+            <!-- Cell 2 -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/b4k2"/>
+
+            <!-- Cell 3 -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/b4k3"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+</RelativeLayout>
